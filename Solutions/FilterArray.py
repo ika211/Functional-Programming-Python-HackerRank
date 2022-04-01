@@ -2,9 +2,7 @@ import itertools
 
 
 def f(delim, arr):
-    for elem in arr:
-        if elem < delim:
-            yield elem
+    return filter(lambda a: a < delim, arr)
 
 
 if __name__ == "__main__":
