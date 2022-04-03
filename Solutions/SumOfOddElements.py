@@ -2,7 +2,8 @@ from functools import reduce
 
 
 def f(arr):
-    return reduce(lambda a, b: a+b, filter(lambda num: num % 2 != 0, arr))
+    # return reduce(lambda a, b: a+b, filter(lambda num: num % 2 != 0, arr))
+    return sum(filter(lambda num: num % 2 != 0, arr))
 
 
 if __name__ == '__main__':
